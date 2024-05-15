@@ -27,440 +27,434 @@ Publish the website in the LocalHost.
 
 ## PROGRAM :
 
-### pharmacy.html
+### web.html
 ```
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pharmacy Website</title>
+  <title>Home - PharmaCompany</title>
   <!-- Bootstrap CSS -->
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
   <style>
-    /* Custom CSS can go here */
+    body {
+      background-image: url('med.jpeg');
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    footer{
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background-color: #343a40; 
+      color: white;
+      text-align: center;
+      padding: 10px 0; 
+    }
   </style>
 </head>
 <body>
 
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">OurPharmacy</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav ml-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="pharmacy.html">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="ABOUTP.html">About</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="service.html">Services</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="CONTACTPHA.html">Contact</a>
-      </li>
-    </ul>
-  </div>
-</nav>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-warning">
+    <a class="navbar-brand" href="#">PharmaPlus</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-<!-- Main Content -->
-<div class="container mt-4">
-  <div class="row">
-    <div class="col-md-8">
-      <h2>Welcome to OurPharmacy</h2>
-      <p>The best and the Most Efficient Pharmacy is Within your computer.</p>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="web.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="med.html">Medicines</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="doc.html">Contact</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Register</a>
+        </li>
+      </ul>
     </div>
-    <div class="col-md-4">
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">Opening Hours</h5>
-          <p class="card-text">Monday - Friday: 9:00 AM - 6:00 PM</p>
-          <p class="card-text">Saturday: 10:00 AM - 4:00 PM</p>
-          <p class="card-text">Sunday: Closed</p>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-8">
+        <h1>This is PharmaPlus</h1>
+        <p>PharmaPlus is a leading pharmaceutical company dedicated to improving healthcare outcomes through innovation, accessibility, and quality. With a commitment to excellence, we strive to provide a wide range of high-quality pharmaceutical products and services to meet the diverse needs of patients, healthcare professionals, and communities worldwide.</p>
+        <p>With a global presence, PharmaPlus serves patients and healthcare providers in markets around the world. Through strategic partnerships, distribution networks, and collaborations, we ensure that our products reach those who need them, regardless of geographic location.</p>
+        <p>As a responsible corporate citizen, we are actively engaged in supporting initiatives that promote health and wellness within the communities we serve. From educational programs and disease awareness campaigns to charitable donations and volunteer efforts, we are committed to making a positive impact on society and fostering healthier, more vibrant communities.</p>
+      </div>
+      <div class="col-md-4">
+       
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-4 mt-5">
+    <p>&copy; 2024 PharmaPlus. All rights reserved.</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+```
+### med.html
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products - Pharmaplus</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <style>
+    body {
+      background-image: url('med.jpeg');
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    footer{
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background-color: blue; 
+      color: rgb(11, 199, 233);
+      text-align: center;
+      padding: 10px 0; 
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-warning">
+    <a class="navbar-brand" href="#">PharmaPlus</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="web.html">Home</a>
+        </li>
+        <li class="nav-item active">
+            <a class="nav-link" href="med.html">Medicines <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="doc.html">Contact</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Register</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-12">
+        <h1>Our Products</h1>
+        <div class="card-deck">
+          <div class="card">
+            <img src="shopping.webp" class="card-img-top" alt="Product 1">
+            <div class="card-body">
+              <h5 class="card-title">Medicine 1</h5>
+              <p class="card-text">	Ferrum phosphoricum 6x 25 g Tablets</p>
+              <p>350.Rs</p>
+              <a href="#" class="btn btn-primary">Buy Now</a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="var.jpg" class="card-img-top" alt="Product 2">
+            <div class="card-body">
+              <h5 class="card-title">Medicine 2</h5>
+              <p class="card-text">CVaraSpan® by Varalife® - NAD+ Booster + Resveratrol Supplement</p>
+              <p>7,799 Rs</p>
+              <a href="#" class="btn btn-primary">Buy Now</a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="car.webp" class="card-img-top" alt="Product 3">
+            <div class="card-body">
+              <h5 class="card-title">Medicine 3</h5>
+              <p class="card-text">Cardio Heal Cardiac Care Capsule</p>
+              <p>1003 Rs</p>
+              <a href="#" class="btn btn-primary">Buy Now</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
 
-<!-- Footer -->
-<footer class="bg-dark text-white mt-5 py-4">
-  <div class="container text-center">
-    <p>&copy; 2024 Pharmacy. All rights reserved.</p><br>
-    <p>Developed by Naveen kumar V  (212223230140)</p>
-  </div>
-</footer>
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-4 mt-5">
+    <p>&copy; 2024 PharmaPlus. All rights reserved.</p>
+  </footer>
 
-<!-- Bootstrap JS and dependencies -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
 ```
-### ABOUTP.html
+###  about.html
 ```
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Us - OurPharmacy</title>
+  <title>About PharmaPlus</title>
   <!-- Bootstrap CSS -->
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
   <style>
-    /* Custom CSS for Pharmacy Website */
-
-    /* Navbar */
-    .navbar {
-      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    body {
+      background-image: url('med.jpeg');
+      background-size: cover;
+      background-repeat: no-repeat;
     }
-
-    .navbar-brand {
-      font-weight: bold;
-    }
-
-    /* Main Content */
-    .container {
-      padding-top: 20px;
-    }
-
-    /* Footer */
-    footer {
-      background-color: #343a40;
-      color: #fff;
-    }
-
-    /* Responsive styles */
-    @media (max-width: 768px) {
-      .container {
-        padding-top: 60px;
-      }
+    footer{
+    position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background-color: #343a40; 
+      color: rgb(12, 194, 226);
+      text-align: center;
+      padding: 10px 0; 
     }
   </style>
 </head>
 <body>
 
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">OurPharmacy</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav ml-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="pharmacy.html">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="ABOUTP.html">About</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="service.html">Services</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="CONTACTPHA.html">Contact</a>
-      </li>
-    </ul>
-  </div>
-  <!-- Rest of the navbar code -->
-</nav>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-warning">
+    <a class="navbar-brand" href="#">PharmaPlus</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-<!-- Main Content -->
-<div class="container mt-4">
-  <!-- About content -->
-  <h2>About OurPharmacy</h2>
-  <p>Welcome to OurPharmacy, your trusted neighborhood pharmacy dedicated to providing high-quality healthcare services and products. Our team of experienced pharmacists and staff are here to serve you with care and expertise.</p>
-  <img src="C:\Users\91755\Pictures\phar.jpg" alt="Pharmacy Image" class="img-fluid mt-4" height="400" width="400">
-</div>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="web.html">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="med.html">Medicines</a>
+        </li>
+        <li class="nav-item dropdown active">
+          <a class="nav-link dropdown-toggle" href="about.html" id="navbarDropdownAbout" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            About
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownAbout">
+            <a class="dropdown-item" href="#vision">Vision</a>
+            <a class="dropdown-item" href="#mission">Mission</a>
+            <a class="dropdown-item" href="#values">Values</a>
+            <!-- Add more subheadings as needed -->
+          </div>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="doc.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
-<!-- Footer -->
-<footer class="bg-dark text-white mt-5 py-4">
-  <div class="container">
+  <!-- Page Content -->
+  <div class="container mt-5">
     <div class="row">
-      <div class="col-md-6">
-        <h5>Contact Us</h5>
-        <p>Address: 123 Pharmacy Street, Cityville, State, ZIP</p>
-        <p>Phone: 123-456-7890</p>
-        <p>Email: info@ourpharmacy.com</p>
-      </div>
-      <div class="col-md-6">
-        <h5>Follow Us</h5>
-        <p>Stay connected with us on social media for updates and health tips.</p>
-        <ul class="list-inline">
-          <li class="list-inline-item"><a href="#"><img src="C:\Users\91755\Pictures\pharface.jpeg" alt="Facebook" height="30" width="30"></a></li>
-          <li class="list-inline-item"><a href="#"><img src="C:\Users\91755\Pictures\twitter.png" alt="Twitter" height="30" width="30"></a></li>
-          <li class="list-inline-item"><a href="#"><img src="C:\Users\91755\Pictures\pa.png" alt="Instagram" height="30" width="30"></a></li>
-        </ul>
+      <div class="col-md-12">
+        <h1>About PharmaPlus</h1>
+        <div id="vision">
+          <h2>Vision</h2>
+          <p>Our vision is to be a leading provider of innovative healthcare solutions that improve the quality of life for people around the world.</p>
+        </div>
+        <div id="mission">
+          <h2>Mission</h2>
+          <p>Our mission is to develop and deliver safe, effective, and affordable medications that address the healthcare needs of our customers.</p>
+        </div>
+        <div id="values">
+          <h2>Values</h2>
+          <ul>
+            <li>Quality: We are committed to maintaining the highest standards of quality in everything we do.</li>
+            <li>Integrity: We conduct our business with honesty, transparency, and ethical behavior.</li>
+            <li>Innovation: We strive to continuously innovate and improve our products and services to better serve our customers.</li>
+            <li>Customer Focus: We are dedicated to understanding and meeting the needs of our customers.</li>
+            <li>Teamwork: We work together as a team to achieve our goals and deliver exceptional results.</li>
+          </ul>
+        </div>
+        <!-- Add more subheadings as needed -->
       </div>
     </div>
   </div>
-</footer>
 
-<!-- Bootstrap JS and dependencies -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-4 mt-5">
+    <p>&copy; 2024 PharmaPlus. All rights reserved.</p>
+  </footer>
 
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
 ```
-###  service.html
+### doc.html
 ```
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Our Services - OurPharmacy</title>
+  <title>Contact Us - PharmaPlus</title>
   <!-- Bootstrap CSS -->
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
   <style>
-    /* Custom CSS for Pharmacy Website */
-
-    /* Navbar */
-    .navbar {
-      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    body {
+      background-image: url('med.jpeg');
+      background-size: cover;
+      background-repeat: no-repeat;
     }
-
-    .navbar-brand {
-      font-weight: bold;
-    }
-
-    /* Main Content */
-    .container {
-      padding-top: 20px;
-    }
-
-    /* Footer */
-    footer {
-      background-color: #343a40;
-      color: #fff;
-    }
-
-    /* Responsive styles */
-    @media (max-width: 768px) {
-      .container {
-        padding-top: 60px;
-      }
+    footer{
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background-color: #343a40; 
+      color: rgb(7, 211, 238);
+      text-align: center;
+      padding: 10px 0; 
     }
   </style>
 </head>
 <body>
 
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">OurPharmacy</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav ml-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="pharmacy.html">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="ABOUTP.html">About</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="service.html">Services</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="CONTACTPHA.html">Contact</a>
-      </li>
-    </ul>
-  </div>
-  <!-- Rest of the navbar code -->
-</nav>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-warning">
+    <a class="navbar-brand" href="#">PharmaPlus</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-<!-- Main Content -->
-<div class="container mt-4">
-  <!-- Services content -->
-  <h2>Our Services</h2>
-  <p>At OurPharmacy, we offer a wide range of services to cater to your healthcare needs:</p>
-  <ul>
-    <li>Prescription filling and medication counseling</li>
-    <li>Over-the-counter medications and health products</li>
-    <li>Health screenings and vaccinations</li>
-    <li>Medication therapy management</li>
-    <li>Home delivery services</li>
-    <li>Compounding services</li>
-  </ul>
-  <!-- Image related to pharmacy services -->
-  <img src="C:\Users\91755\Pictures\DEL.jpg" alt="Pharmacy Services" class="img-fluid mt-4" height="250" width="250">
-  <img src="C:\Users\91755\Pictures\MEDICATION.webp" alt="Pharmacy Services" class="img-fluid mt-4" height="250" width="250">
-  <img src="C:\Users\91755\Pictures\MEDIC.jpg" alt="Pharmacy Services" class="img-fluid mt-4" height="300" width="250">
-  <img src="C:\Users\91755\Pictures\Online.jpg" alt="Pharmacy Services" class="img-fluid mt-4" height="300" width="250">
-</div>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="web.html">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="med.html">Medicines</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="doc.html">Contact <span class="sr-only">(current)</span></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
-<!-- Footer -->
-<footer class="bg-dark text-white mt-5 py-4">
-  <div class="container">
+  <!-- Page Content -->
+  <div class="container mt-5">
     <div class="row">
-      <div class="col-md-6">
-        <h5>Contact Us</h5>
-        <p>Address: 123 Pharmacy Street, Cityville, State, ZIP</p>
-        <p>Phone: 123-456-7890</p>
-        <p>Email: info@ourpharmacy.com</p>
+      <div class="col-md-8">
+        <h1>Contact Us</h1>
+        <p>For any inquiries or feedback, please fill out the form below and we will get back to you as soon as possible.</p>
+        <form>
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter your name">
+          </div>
+          <div class="form-group">
+            <label for="email">Your Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter your email">
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea class="form-control" id="message" rows="5" placeholder="Enter your message"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
       </div>
-      <div class="col-md-6">
-        <h5>Follow Us</h5>
-        <p>Stay connected with us on social media for updates and health tips.</p>
-        <ul class="list-inline">
-          <li class="list-inline-item"><a href="#"><img src="C:\Users\91755\Pictures\pharface.jpeg" alt="Facebook" height="30" width="30"></a></li>
-          <li class="list-inline-item"><a href="#"><img src="C:\Users\91755\Pictures\twitter.png" alt="Twitter" height="30" width="30"></a></li>
-          <li class="list-inline-item"><a href="#"><img src="C:\Users\91755\Pictures\pa.png" alt="Instagram" height="30" width="30"></a></li>
-        </ul>
+      <div class="col-md-4">
+        <h2>PharmaPlus</h2>
+        <address>
+          <strong>Address:</strong><br>
+          057, Blacksmith street, Chennai<br>
+          India, 632007<br><br>
+          <strong>Email:</strong><br>
+          info@pplus.com<br><br>
+          <strong>Phone:</strong><br>
+          +91 9597061234
+        </address>
       </div>
     </div>
   </div>
-</footer>
 
-<!-- Bootstrap JS and dependencies -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-4 mt-5">
+    <p>&copy; 2024 PharmaPlus. All rights reserved.</p>
+  </footer>
 
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
 ```
-### CONTACTPH.html
-```
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Us - OurPharmacy</title>
-  <!-- Bootstrap CSS -->
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-  <style>
-    /* Custom CSS for Pharmacy Website */
-
-    /* Navbar */
-    .navbar {
-      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    }
-
-    .navbar-brand {
-      font-weight: bold;
-    }
-
-    /* Main Content */
-    .container {
-      padding-top: 20px;
-    }
-
-    /* Footer */
-    footer {
-      background-color: #343a40;
-      color: #fff;
-    }
-
-    /* Responsive styles */
-    @media (max-width: 768px) {
-      .container {
-        padding-top: 60px;
-      }
-    }
-  </style>
-</head>
-<body>
-
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="pharmacy.html">OurPharmacy</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav ml-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="ABOUTP.html">About</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="service.html">Services</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="CONTACTPHA.html">Contact</a>
-      </li>
-    </ul>
-  </div>
-  <!-- Rest of the navbar code -->
-</nav>
-
-<!-- Main Content -->
-<div class="container mt-4">
-  <!-- Contact Form -->
-  <h2>Contact Us</h2>
-  <p>If you have any questions or inquiries, please feel free to contact us using the form below:</p>
-  <form>
-    <div class="form-group">
-      <label for="name">Name:</label>
-      <input type="text" class="form-control" id="name" placeholder="Enter your name">
-    </div>
-    <div class="form-group">
-      <label for="email">Email:</label>
-      <input type="email" class="form-control" id="email" placeholder="Enter your email">
-    </div>
-    <div class="form-group">
-      <label for="message">Message:</label>
-      <textarea class="form-control" id="message" rows="5" placeholder="Enter your message"></textarea>
-    </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
-  </form>
-</div>
-
-<!-- Footer -->
-<footer class="bg-dark text-white mt-5 py-4">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6">
-        <h5>Contact Us</h5>
-        <p>Address: 123 Pharmacy Street, Cityville, State, ZIP</p>
-        <p>Phone: 123-456-7890</p>
-        <p>Email: info@ourpharmacy.com</p>
-      </div>
-      <div class="col-md-6">
-        <h5>Follow Us</h5>
-        <p>Stay connected with us on social media for updates and health tips.</p>
-        <ul class="list-inline">
-          <li class="list-inline-item"><a href="#"><img src="C:\Users\91755\Pictures\pharface.jpeg" alt="Facebook" height="30" width="30"></a></li>
-          <li class="list-inline-item"><a href="#"><img src="C:\Users\91755\Pictures\twitter.png" alt="Twitter" height="30" width="30"></a></li>
-          <li class="list-inline-item"><a href="#"><img src="C:\Users\91755\Pictures\pa.png" alt="Instagram" height="30" width="30"></a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <center>Developed By Kishore.b (212222110020)</center>
-</footer>
-
-<!-- Bootstrap JS and dependencies -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-</body>
-</html>
-```
+###
 ## OUTPUT:
 
-### pharmacy.html
-![image](https://github.com/Naveenkumarvedarajan/Pharma/assets/147140428/8f1570f6-407a-4d4f-abca-772e9e695b2d)
+### web.html
+![image](https://github.com/Naveenkumarvedarajan/Pharma/assets/147140428/3a2fe924-1c7c-45a6-a24f-df182a59ff98)
 
-### ABOUTP.html
-![image](https://github.com/Naveenkumarvedarajan/Pharma/assets/147140428/40978db9-29e7-4400-96d0-cc6cac36c1ca)
+### med.html
+![image](https://github.com/Naveenkumarvedarajan/Pharma/assets/147140428/a6ab28ca-87c0-4987-a651-a866306936c2)
 
-### service.html
-![image](https://github.com/Naveenkumarvedarajan/Pharma/assets/147140428/8eda50f8-b5c3-481e-a4e2-7e448fd5cbfb)
+### about.html
+![image](https://github.com/Naveenkumarvedarajan/Pharma/assets/147140428/c14fe294-cb92-4b62-9111-425dfadf1700)
+
+### doc.html
+![image](https://github.com/Naveenkumarvedarajan/Pharma/assets/147140428/f6fb8679-740d-4729-ba55-2f375f6596d3)
 
 
 
